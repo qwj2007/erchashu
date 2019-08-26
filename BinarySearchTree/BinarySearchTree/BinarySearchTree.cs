@@ -12,6 +12,10 @@ namespace BinarySearchTree
         {
             root = null;
         }
+        /// <summary>
+        /// 中序遍历
+        /// </summary>
+        /// <param name="node"></param>
         public void InOrder(Node node)
         {
             if (node != null)
@@ -21,6 +25,10 @@ namespace BinarySearchTree
                 InOrder(node.Right);
             }
         }
+        /// <summary>
+        /// 前序遍历
+        /// </summary>
+        /// <param name="node"></param>
         public void PreOrder(Node node)
         {
             if (node != null)
@@ -30,6 +38,10 @@ namespace BinarySearchTree
                 PreOrder(node.Right);
             }
         }
+        /// <summary>
+        /// 倒序
+        /// </summary>
+        /// <param name="node"></param>
         public void BackOrder(Node node)
         {
             if (node != null)
@@ -39,6 +51,10 @@ namespace BinarySearchTree
                 BackOrder(node.Left);
             }
         }
+        /// <summary>
+        /// 后序遍历
+        /// </summary>
+        /// <param name="node"></param>
         public void PostOrder(Node node)
         {
             if (node != null)
